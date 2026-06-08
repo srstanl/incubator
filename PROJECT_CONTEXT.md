@@ -18,7 +18,10 @@ Bridge the gap between `playground` and `portfolio`.
 ## Default Assumptions
 - Each incubated project should define current state, target state, and graduation criteria.
 - Projects here should maintain a small backlog or execution board.
-- Web-facing projects should avoid introducing unnecessary frontend stack sprawl without a documented reason.
+- Developer-facing and platform-oriented tools should default to a Python backend and React frontend.
+- Other application experiences should default to a .NET backend and Angular frontend.
+- Exceptions are allowed when a project has a documented reason to diverge.
+- Incubated projects should avoid introducing unnecessary frontend stack sprawl without a documented reason.
 
 ## Initial Candidate Direction
 - `problem_recommender` is the first likely incubation candidate if it continues beyond exploration and into intentional service/UI/platform onboarding work.
