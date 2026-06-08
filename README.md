@@ -2,11 +2,11 @@
 
 This repository is the bridge between `playground` and `portfolio`.
 
-It exists for projects that are no longer pure experiments, but are not yet mature enough to be treated as portfolio-grade assets.
+It exists for projects that have completed their major 1.0 feature set, but are not yet mature enough to be treated as portfolio-grade assets.
 
 ## Purpose
 
-`Incubator` is where selected projects get intentional investment.
+`Incubator` is where selected projects get intentional investment after MVP scope is present.
 
 Typical work here includes:
 - architecture cleanup
@@ -15,7 +15,7 @@ Typical work here includes:
 - runtime and deployment shaping
 - documentation hardening
 - stack and boundary decisions
-- proving whether a project should graduate, stay experimental, or be retired
+- proving whether a project should graduate, stay standalone, or be retired
 
 ## Repository Lifecycle
 
@@ -25,10 +25,11 @@ Use `playground` for:
 - one-off prototypes
 - curiosity-driven spikes
 - work that may never be revisited
+- active product development before major 1.0 features exist
 
 ### `incubator`
 Use `incubator` for:
-- projects chosen for active shaping
+- projects chosen for active shaping after MVP-complete core features exist
 - candidates for portfolio inclusion
 - platform feature candidates not ready to live in `portfolio`
 - work with a defined backlog and explicit maturation goals
@@ -43,7 +44,7 @@ Use `portfolio` for:
 ## What Belongs Here
 
 Examples of good incubator candidates:
-- a project graduating out of `playground`
+- a project graduating out of `playground` after core product capabilities exist
 - a realistic application being onboarded onto the platform
 - a potential platform feature that needs room to mature outside the main portfolio repo
 - a project that needs governance, backlog management, and clearer exit criteria
@@ -51,6 +52,7 @@ Examples of good incubator candidates:
 ## What Does Not Belong Here
 
 - throwaway experiments better suited for `playground`
+- projects still missing core 1.0 product features
 - fully mature platform assets that should live in `portfolio`
 - unrelated long-term products with no portfolio or platform relevance
 
@@ -78,4 +80,4 @@ A project in `incubator` can end in one of three ways:
 
 ## Initial Intention
 
-The first likely incubator candidate is `problem_recommender`, assuming it continues beyond exploration and into deliberate service/UI/platform onboarding work.
+`problem_recommender` is a likely future incubator candidate, but only after its API and UI are present and the product has reached an MVP-complete state inside `playground`.

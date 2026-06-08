@@ -6,6 +6,7 @@ A project should move into `incubator` when most of the following are true:
 - it has moved beyond casual experimentation
 - it has a clear reason to exist
 - it is worth structured investment
+- its major 1.0 product capabilities are already present
 - it needs architecture, runtime, or platform decisions
 - it has a realistic chance of graduating into a stronger asset
 - it would benefit from explicit backlog tracking
@@ -65,6 +66,8 @@ Recommended epic types:
 
 If a project is still asking “is this worth anything?” it belongs in `playground`.
 
-If a project is asking “how do we shape this into something credible?” it belongs in `incubator`.
+If a project is still missing major 1.0 product capabilities, it remains in `playground`.
+
+If a project is asking “how do we operationalize and harden this now that the product shape exists?” it belongs in `incubator`.
 
 If a project is asking “how do we present and sustain this as a proven asset?” it belongs in `portfolio`.
