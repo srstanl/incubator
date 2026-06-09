@@ -15,6 +15,10 @@ Bridge the gap between `playground` and `portfolio`.
 - `incubator`: selected candidates under active shaping.
 - `portfolio`: proven references, platform assets, and showcase-quality implementations.
 
+## Repository Governance
+- `main` branch protection for `incubator` is managed from the shared ruleset baseline stored in `portfolio/scripts/github/rulesets/`.
+- This is intentional: repository rules are treated as shared platform governance, not duplicated ad hoc per repo.
+
 ## Default Assumptions
 - Each incubated project should define current state, target state, and graduation criteria.
 - Projects here should maintain a small backlog or execution board.
