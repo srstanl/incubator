@@ -34,3 +34,41 @@ Bridge the gap between `playground` and `portfolio`.
 1. Decide when `problem_recommender` should move from `playground` into `incubator`.
 2. Define board/project tracking conventions for incubated work.
 3. Document entry and graduation criteria per project.
+
+## Session Conventions
+- Keyword: `start session`
+- Meaning: begin a new work session by recapping the previous session and checking the board for the next task.
+- `start session` checklist:
+  1. Review `PROJECT_CONTEXT.md` for current status, decisions, and immediate next steps.
+  2. Check the active board/epic and confirm the next `Ready` or planned task.
+  3. Summarize repo state (clean vs in-flight changes).
+  4. Propose the next concrete work item before making edits.
+
+- Keyword: `save state`
+- Meaning: current task reached a stopping point and work should be stored durably in remote history without waiting for follow-up prompts.
+- `save state` checklist:
+  1. Update `PROJECT_CONTEXT.md` (state, decisions, next action).
+  2. Update impacted README/docs for accuracy.
+  3. Run quick validation for touched areas when feasible.
+  4. Summarize the changes and current git status.
+  5. Check the current branch name; if it is `main`, create and switch to a new branch before committing.
+  6. Commit the current work with a clear message.
+  7. Push the current branch to remote.
+  8. Call out any known validation gaps, CI blockers, or follow-up risks.
+
+- Keyword: `end session`
+- Meaning: session is ending.
+- `end session` checklist:
+  1. Update `PROJECT_CONTEXT.md` (state, decisions, next actions).
+  2. Update impacted README/docs for accuracy.
+  3. Run quick validation for touched areas when feasible.
+  4. Update the active board/task state if progress changed during the session.
+  5. Summarize the session changes and current repo state.
+  6. If the work does not already have a tracking issue, create one before opening or updating the PR.
+  7. Link the PR to the issue explicitly:
+     - use `Closes #...` if the issue should remain open until merge
+     - use `Refs #...` if the issue is being closed immediately as tracking-only documentation
+  8. Check the current branch name; if it is `main`, create and switch to a new branch before committing.
+  9. Commit the current work with a clear message.
+  10. Push the current branch to remote.
+  11. Call out any known CI blockers, unresolved risks, or next recommended starting point.
